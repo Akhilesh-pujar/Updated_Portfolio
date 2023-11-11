@@ -126,6 +126,8 @@ export const experiences = [
     {
         title: "Next js",
         company_name: "Free lancing Agency",
+        icon: freelance,
+        iconBg: "#e06378",
        
        
         date: "June 2023 - October 2023",
@@ -138,10 +140,10 @@ export const experiences = [
     },
     {
         title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
+        company_name: "Freelancing Agency",
+        icon: freelance,
+        iconBg: "#a773f0",
+        date: "Jan 2022 - june 2022",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
