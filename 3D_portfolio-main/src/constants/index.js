@@ -156,7 +156,7 @@ export const experiences = [
         company_name: "Simmi Foundation",
         icon: internimg,
         iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
+        date: "Jan 2023 - july2023",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -190,41 +190,22 @@ export const projects = [
         theme: 'btn-back-red',
         name: 'Notion Clone',
         description: 'Developed a web application that tracks users tasks and incomplete task and keeps a streak so that user can see how consistently they are working .',
-        link: 'https://github.com/Akhilesh-pujar/Notion-clone',
+        link: 'https://tasktaking.vercel.app/',
     },
-    {
-        iconUrl: threads,
-        theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Made a fully functioning URL summerizer which will help you to do your research on new websites and where you can search correct website according to your fit.',
-        link: 'https://github.com/Akhilesh-pujar/Article--summerizer-using-Open-ai-gpt4',
-    },
-    {
-        iconUrl: car,
-        theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/Akhilesh-pujar/Article--summerizer-using-Open-ai-gpt4',
-    },
-    {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/Akhilesh-pujar/Article--summerizer-using-Open-ai-gpt4',
-    },
+
+
     {
         iconUrl: estate,
         theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/Akhilesh-pujar/Article--summerizer-using-Open-ai-gpt4',
+        name: 'Quiz app with ai setted questions.',
+        description: 'Developed a web application for quiz contests which helps teachers to set questions for students in small amount of time.',
+        link: 'https://github.com/Akhilesh-pujar/quiz-app-with-ai-set-questions',
     },
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
         name: 'AI Summarizer Application',
         description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/Akhilesh-pujar/Article--summerizer-using-Open-ai-gpt4',
+        link: 'https://article-summerizer-using-open-ai-gpt4.vercel.app/',
     }
 ];
