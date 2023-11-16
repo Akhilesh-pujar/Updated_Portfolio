@@ -197,15 +197,23 @@ export const projects = [
     {
         iconUrl: estate,
         theme: 'btn-back-black',
-        name: 'Quiz app with ai setted questions.',
-        description: 'Developed a web application for quiz contests which helps teachers to set questions for students in small amount of time.',
-        link: 'https://github.com/Akhilesh-pujar/quiz-app-with-ai-set-questions',
+        name: 'Super Car Catalouge.',
+        description: 'Developed a web application for searching specifications of super cars and its rental for a day for data I have used rapid API.',
+        link: 'https://supercars-catalogue-rapidapi.vercel.app/',
     },
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
         name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
+        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy blogs and website and it summerizes the web for you.',
         link: 'https://article-summerizer-using-open-ai-gpt4.vercel.app/',
+    },
+    {
+        iconUrl: summiz,
+        theme: 'btn-back-green',
+        name: 'Quiz App with AI',
+        description: 'App that leverages AI to automatically generate concise questions for user according to there needs and you can choose the difficulty of the questions You want to set.',
+        link: 'https://github.com/Akhilesh-pujar/Quiz-app-with-ai',
+
     }
 ];
