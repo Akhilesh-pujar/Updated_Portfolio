@@ -188,11 +188,17 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'Notion Clone',
-        description: 'Developed a web application that tracks users tasks and incomplete task and keeps a streak so that user can see how consistently they are working .',
+        name: 'IdeaForge: NextGen Notes |',
+        description: ' IdeaForge redifines note-taking with NextGen Notes, a cutting-edge platform that seamlessly combines the power of Next.js, Convex, and Clerk technologies',
         link: 'https://tasktaking.vercel.app/',
     },
-
+    {
+        iconUrl: snapgram,
+        theme: 'btn-back-black',
+        name: 'WebWeave: MeshMeet',
+        description: 'A dynamic and seamless WebRTC-powered video conferencing platform employing a mesh topology for enhanced connectivity and collaboration.',
+        link: 'https://github.com/Akhilesh-pujar/video_meet',
+    },
 
     {
         iconUrl: estate,
@@ -211,7 +217,7 @@ export const projects = [
     {
         iconUrl: summiz,
         theme: 'btn-back-green',
-        name: 'Quiz App with AI',
+        name: 'CogniQuest: AI Quiz Realm ',
         description: 'App that leverages AI to automatically generate concise questions for user according to there needs and you can choose the difficulty of the questions You want to set.',
         link: 'https://github.com/Akhilesh-pujar/Quiz-app-with-ai',
 
