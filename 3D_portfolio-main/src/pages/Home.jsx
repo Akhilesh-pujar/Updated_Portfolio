@@ -1,65 +1,123 @@
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useRef, useState } from "react";
-
+import {animate, motion} from "framer-motion"
 import sakura from "../assets/sakura.mp3";
 import { HomeInfo, Loader } from "../components";
 import { soundoff, soundon } from "../assets/icons";
 import { Bird, Island, Plane, Sky } from "../models";
+import Star from "../components/Star";
+import Title from "../components/Title";
 
 const Home = () => {
-  const audioRef = useRef(new Audio(sakura));
-  audioRef.current.volume = 0.4;
-  audioRef.current.loop = true;
+  // const audioRef = useRef(new Audio(sakura));
+  // audioRef.current.volume = 0.4;
+  // audioRef.current.loop = true;
 
-  const [currentStage, setCurrentStage] = useState(1);
-  const [isRotating, setIsRotating] = useState(false);
-  const [isPlayingMusic, setIsPlayingMusic] = useState(false);
+  // const [currentStage, setCurrentStage] = useState(1);
+  // const [isRotating, setIsRotating] = useState(false);
+  // const [isPlayingMusic, setIsPlayingMusic] = useState(false);
 
-  useEffect(() => {
-    if (isPlayingMusic) {
-      audioRef.current.play();
-    }
+  // useEffect(() => {
+  //   if (isPlayingMusic) {
+  //     audioRef.current.play();
+  //   }
 
-    return () => {
-      audioRef.current.pause();
-    };
-  }, [isPlayingMusic]);
+  //   return () => {
+  //     audioRef.current.pause();
+  //   };
+  // }, [isPlayingMusic]);
 
-  const adjustBiplaneForScreenSize = () => {
-    let screenScale, screenPosition;
+  // const adjustBiplaneForScreenSize = () => {
+  //   let screenScale, screenPosition;
 
    
-    if (window.innerWidth < 768) {
-      screenScale = [1.5, 1.5, 1.5];
-      screenPosition = [0, -1.5, 0];
-    } else {
-      screenScale = [3, 3, 3];
-      screenPosition = [0, -4, -4];
-    }
+  //   if (window.innerWidth < 768) {
+  //     screenScale = [1.5, 1.5, 1.5];
+  //     screenPosition = [0, -1.5, 0];
+  //   } else {
+  //     screenScale = [3, 3, 3];
+  //     screenPosition = [0, -4, -4];
+  //   }
 
-    return [screenScale, screenPosition];
-  };
+  //   return [screenScale, screenPosition];
+  // };
 
-  const adjustIslandForScreenSize = () => {
-    let screenScale, screenPosition;
+  // const adjustIslandForScreenSize = () => {
+  //   let screenScale, screenPosition;
 
-    if (window.innerWidth < 768) {
-      screenScale = [0.9, 0.9, 0.9];
-      screenPosition = [0, -6.5, -43.4];
-    } else {
-      screenScale = [1, 1, 1];
-      screenPosition = [0, -6.5, -43.4];
-    }
+  //   if (window.innerWidth < 768) {
+  //     screenScale = [0.9, 0.9, 0.9];
+  //     screenPosition = [0, -6.5, -43.4];
+  //   } else {
+  //     screenScale = [1, 1, 1];
+  //     screenPosition = [0, -6.5, -43.4];
+  //   }
 
-    return [screenScale, screenPosition];
-  };
+  //   return [screenScale, screenPosition];
+  // };
 
-  const [biplaneScale, biplanePosition] = adjustBiplaneForScreenSize();
-  const [islandScale, islandPosition] = adjustIslandForScreenSize();
+  // const [biplaneScale, biplanePosition] = adjustBiplaneForScreenSize();
+  // const [islandScale, islandPosition] = adjustIslandForScreenSize();
 
+   const StarCount = 90;
+ 
+ 
   return (
-    <section className='w-full h-screen relative'>
-      <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
+    <div 
+    className=' bg-black flex flex-col items-center 
+    justify-center w-screen
+     h-screen overflow-hidden bg-gradient-to-tl from-black
+     via-zinc-600/20 to-black'>
+        {Array.from({length:StarCount}).map((_,index)=>(
+          <Star key={index}/>
+        ))}
+     
+        <motion.div 
+        initial={{opacity:0, z:-10}}
+        whileInView={{opacity:1, z:0}}
+        transition={{duration:1 , delay:0.4, ease:'easeInOut'}}
+        className="hidden w-screen h-px animate-glow md:block animate-fade-right
+         bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0"/>
+
+        <motion.div className="absolute inset-0 -z-10 animate-fade-in  " aria-hidden="true"/>
+        {/* <canvas width="517" height="1120" className="width-[414px]"></canvas> */}
+
+        <motion.div
+         initial={{opacity:0, z:-10}}
+         animate={{opacity:1, z:0}}
+        
+         transition={{ duration: 1 , delay:0.4, ease:'easeInOut' }}
+         className="flex justify-center items-center flex-col flex-col-2"
+        >
+        <h1 className="text-4xl text-transparent  cursor-default 
+          text-edge-outline sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text
+          blue-gradient_text"> <Title /></h1>
+           <span className="w-10 h-10">👋</span>
+        </motion.div>
+         
+       
+        
+
+        <motion.div
+         initial={{opacity:0, z:-10}}
+         whileInView={{opacity:1, z:0}}
+         transition={{duration:1.8 , delay:0.4, ease:'easeInOut'}}
+        className="hidden w-screen h-px animate-glow md:block animate-fade-right
+         bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0
+        ">
+
+        </motion.div>
+        <div className=" my-16 text-center animate-fade-in">
+          <h2 className="text-sm text-zinc-500">
+            
+            I'm Akhilesh likes to build logics for fullstack website</h2>
+        </div>
+
+    
+    
+
+
+      {/* <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
 
@@ -111,9 +169,10 @@ const Home = () => {
           onClick={() => setIsPlayingMusic(!isPlayingMusic)}
           className='w-10 h-10 cursor-pointer object-contain'
         />
-      </div>
-    </section>
+      </div> */}
+    </div>
   );
 };
+
 
 export default Home;
