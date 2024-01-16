@@ -13,7 +13,7 @@ const Title = () => {
       initial="hidden"
       animate="visible"
       variants={titleVariants}
-      transition={{ duration: 1 ,  delay: 0.4, ease:"easeInOut" }}
+      transition={{ duration: 1 ,   ease:"easeInOut" }}
    
     >
     Hello  
