@@ -1,4 +1,5 @@
-import {  shopify,internimg, freelance } from "../assets/images";
+import { internimg, freelance } from "../assets/images";
+
 import {
     car,
     contact,
@@ -182,6 +183,7 @@ export const socialLinks = [
         iconUrl: linkedin,
         link: 'https://www.linkedin.com/in/akhilesh-pujar-70aa26212/',
     }
+
 ];
 
 export const projects = [

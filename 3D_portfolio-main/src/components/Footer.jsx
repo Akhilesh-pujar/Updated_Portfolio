@@ -22,6 +22,7 @@ const Footer = () => {
               />
             </Link>
           ))}
+          <Link to="https://leetcode.com/Akhilesh_pujar/" target="_blank" className="text-xl text-amber-500 font-semibold"><span className="text-xl text-gray-800 font-semibold">Leet</span>code</Link>
         </div>
       </div>
     </footer>
