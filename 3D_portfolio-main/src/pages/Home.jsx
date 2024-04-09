@@ -75,7 +75,7 @@ const Home = () => {
         <motion.div 
         initial={{opacity:0, x:-10}}
         animate={{opacity:1, x:0}}
-        transition={{duration:1 , delay:0.4, ease:'easeInOut'}}
+        transition={{duration:1 , delay:0.8, ease:'easeInOut'}}
         className=" w-screen h-px animate-glow md:block animate-fade-right
          bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0"/>
 
@@ -84,13 +84,13 @@ const Home = () => {
         <motion.div
          initial={{opacity:0, z:-10}}
          animate={{opacity:1, z:0}}
-         transition={{ duration: 1 , delay:0.4, ease:'easeIn' }}
-         className="flex justify-center items-center flex-col flex-col-2"
+         transition={{ duration: 1 , delay:0.8, ease:'easeInOut' }}
+         className="flex justify-center items-center flex-col flex-col-2 "
         >
         <h1 className=" z-10 text-4xl text-transparent duration-1000 cursor-default 
           text-edge-outline animate-title sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text
           blue-gradient_text "> <Title /></h1>
-           <span className="w-10 h-10">👋</span>
+           <span className="w-10 h-10 animate-bounce">👋</span>
         </motion.div>
          
        
@@ -111,7 +111,7 @@ const Home = () => {
         animate={{opacity:1, z:0}}
         transition={{duration:1.8 , delay:0.4, ease:'easeIn'}}
         className=" my-16 text-center animate-fade-in">
-          <h2 className="text-sm text-zinc-400">
+          <h2 className="text-s text-zinc-400">
           I'm Akhilesh and I enjoy building logic for full-stack websites.</h2>
         </motion.div>
 

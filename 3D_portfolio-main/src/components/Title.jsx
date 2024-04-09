@@ -16,7 +16,7 @@ const Title = () => {
       transition={{ duration: 1 ,   ease:"easeInOut" }}
    
     >
-    Hello  
+    Hello Visitor  
     </motion.h1>
   );
 };
