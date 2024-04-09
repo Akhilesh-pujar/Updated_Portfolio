@@ -190,7 +190,7 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'IdeaForge: NextGen Notes |',
+        name: 'IdeaForge: NextGen Notes ',
         description: ' IdeaForge redifines note-taking with NextGen Notes, a cutting-edge platform that seamlessly combines the power of Next.js, Convex, and Clerk technologies',
         link: 'https://tasktaking.vercel.app/',
     },
@@ -205,9 +205,9 @@ export const projects = [
     {
         iconUrl: estate,
         theme: 'btn-back-black',
-        name: 'Super Car Catalouge.',
-        description: 'Developed a web application for searching specifications of super cars and its rental for a day for data I have used rapid API.',
-        link: 'https://supercars-catalogue-rapidapi.vercel.app/',
+        name: 'Payment Application.',
+        description: 'I built a web application that allows users to transfer and receive money from other registered users on my platform. It is a small payment application created for educational use exclusively, and it uses a simple architecture using MERN.',
+        link: 'https://github.com/Akhilesh-pujar/PAYTM_COMPLETED',
     },
     {
         iconUrl: summiz,
