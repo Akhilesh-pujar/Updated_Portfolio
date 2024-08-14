@@ -43,7 +43,7 @@ const Navbar = () => {
       }}
       className='flex flex-row items-center cursor-pointer'>
       
-      <nav className='flex text-lg gap-7 font-medium bg-background text-white'>
+      <nav className='flex text-lg gap-7 font-medium bg-background text-gray-600'>
         <NavLink to='/about' >
           About
         </NavLink>
