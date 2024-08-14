@@ -7,6 +7,7 @@ import { CTA } from "../components";
 import { experiences, skills } from "../constants";
 
 import "react-vertical-timeline-component/style.min.css";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -23,8 +24,8 @@ const About = () => {
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
         I am a Full developer with over 1 years of experience in developing complex web applications. I am skilled in a variety of programming languages, including JavaScript, 
-        C++ you can checkout my leet code profile here 
-        <a href="https://leetcode.com/Akhilesh_pujar/" target="_blank" className=" text-amber-500 font-semibold"><span className=" text-gray-800 font-semibold">Leet</span>code</a>
+        C++ you can checkout my leet code profile here:
+        <Link href="https://leetcode.com/Akhilesh_pujar/" target="_blank" className=" text-amber-500 font-semibold">link</Link>
         , and have experience working with various web frameworks and databases. Throughout my College, I have successfully delivered several projects on time and within budget,
          and have received recognition from my Teachers and faculty for my attention to detail and problem-solving skills. I am passionate about creating innovative and efficient 
          solutions to complex problems, and am always eager to learn and grow in my field .

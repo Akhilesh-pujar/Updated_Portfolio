@@ -43,11 +43,11 @@ const Navbar = () => {
       }}
       className='flex flex-row items-center cursor-pointer'>
       
-      <nav className='flex text-lg gap-7 font-medium bg-background text-zinc-500'>
+      <nav className='flex text-lg gap-7 font-medium bg-background text-white'>
         <NavLink to='/about' >
           About
         </NavLink>
-        <NavLink to='/projects' className= "text-zinc-500">
+        <NavLink to='/projects' >
           Projects
         </NavLink>
       </nav>

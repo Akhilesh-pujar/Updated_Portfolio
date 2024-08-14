@@ -112,8 +112,8 @@ export const skills = [
 
 export const experiences = [
     {
-        title: "React.js Developer/Free lancing",
-        company_name: "Free lancing Agency",
+        title: "Free lance Work",
+        company_name: "AS Enterprise",
         icon: freelance,
         iconBg: "#b7e4c7",
         date: "June 2023 - September 2023",
@@ -125,8 +125,8 @@ export const experiences = [
         ],
     },
     {
-        title: "Next js",
-        company_name: "Free lancing Agency",
+        title: "Freelance Work",
+        company_name: "AS Enterprise",
         icon: freelance,
         iconBg: "#e06378",
        
@@ -139,19 +139,19 @@ export const experiences = [
             "provides the stock information and also makes easy for user to place order, which allows user to connect securly.",
         ],
     },
-    {
-        title: "Web Developer",
-        company_name: "Freelancing Agency",
-        icon: freelance,
-        iconBg: "#a773f0",
-        date: "Jan 2022 - june 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+    // {
+    //     title: "Web Developer",
+    //     company_name: "entriprise",
+    //     icon: freelance,
+    //     iconBg: "#a773f0",
+    //     date: "Jan 2022 - june 2022",
+    //     points: [
+    //         "Developing and maintaining web applications using React.js and other related technologies.",
+    //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //         "Implementing responsive design and ensuring cross-browser compatibility.",
+    //         "Participating in code reviews and providing constructive feedback to other developers.",
+    //     ],
+    // },
     {
         title: "Full stack Developer",
         company_name: "Simmi Foundation",
@@ -199,7 +199,7 @@ export const projects = [
         theme: 'btn-back-black',
         name: 'WebWeave: MeshMeet',
         description: 'A dynamic and seamless WebRTC-powered video conferencing platform employing a mesh topology for enhanced connectivity and collaboration.',
-        link: 'https://github.com/Akhilesh-pujar/video_meet',
+        link: 'https://peer-to-peer-communication-xwnc.vercel.app/',
     },
 
     {

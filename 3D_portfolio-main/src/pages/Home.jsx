@@ -59,12 +59,12 @@ const Home = () => {
   // const [biplaneScale, biplanePosition] = adjustBiplaneForScreenSize();
   // const [islandScale, islandPosition] = adjustIslandForScreenSize();
 
-   const StarCount = 90;
+   const StarCount = 92;
  
  
   return (
     <div 
-    className=' bg-black flex flex-col items-center 
+    className=' bg-gray-600/100 flex flex-col items-center 
     justify-center w-screen
      h-screen overflow-hidden bg-gradient-to-tl from-black
      via-zinc-600/20 to-black'>
@@ -111,9 +111,10 @@ const Home = () => {
         animate={{opacity:1, z:0}}
         transition={{duration:1.8 , delay:0.4, ease:'easeIn'}}
         className=" my-16 text-center animate-fade-in">
-          <h2 className="text-s text-zinc-400">
+          <h2 className="text-s text-white">
           I'm Akhilesh and I enjoy building logic for full-stack websites.</h2>
         </motion.div>
+     
 
     
     
