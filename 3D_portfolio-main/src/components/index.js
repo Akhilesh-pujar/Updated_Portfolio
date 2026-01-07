@@ -4,6 +4,7 @@ import Loader from "./Loader";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import HomeInfo from "./HomeInfo";
+import DynamicSkyBackground from "./DynamicSkyBackground";
 
 export {
     CTA,
@@ -11,5 +12,6 @@ export {
     Loader,
     Navbar,
     Footer,
-    HomeInfo
+    HomeInfo,
+    DynamicSkyBackground
 }

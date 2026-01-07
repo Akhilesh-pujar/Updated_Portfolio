@@ -1,4 +1,4 @@
-import { internimg, freelance } from "../assets/images";
+import { internimg, freelance, templegate } from "../assets/images";
 
 import {
     car,
@@ -24,19 +24,79 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript
+    typescript,
+    django,
+    postgresql,
+    python,
+    cybersecurity,
+    esp32
 } from "../assets/icons";
 
 export const skills = [
+    {
+        imageUrl: react,
+        name: "React",
+        type: "Frontend",
+    },
+    {
+        imageUrl: django,
+        name: "Django",
+        type: "Backend",
+    },
+    {
+        imageUrl: postgresql,
+        name: "PostgreSQL",
+        type: "Database",
+    },
+    {
+        imageUrl: python,
+        name: "Python",
+        type: "Backend",
+    },
+    {
+        imageUrl: javascript,
+        name: "JavaScript",
+        type: "Frontend",
+    },
+    {
+        imageUrl: typescript,
+        name: "TypeScript",
+        type: "Frontend",
+    },
+    {
+        imageUrl: nodejs,
+        name: "Node.js",
+        type: "Backend",
+    },
+    {
+        imageUrl: nextjs,
+        name: "Next.js",
+        type: "Frontend",
+    },
+    {
+        imageUrl: mongodb,
+        name: "MongoDB",
+        type: "Database",
+    },
+    {
+        imageUrl: express,
+        name: "Express",
+        type: "Backend",
+    },
+    {
+        imageUrl: cybersecurity,
+        name: "Cyber Security",
+        type: "Security",
+    },
     {
         imageUrl: css,
         name: "CSS",
         type: "Frontend",
     },
     {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
+        imageUrl: html,
+        name: "HTML",
+        type: "Frontend",
     },
     {
         imageUrl: git,
@@ -49,21 +109,6 @@ export const skills = [
         type: "Version Control",
     },
     {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
-    },
-    {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Frontend",
-    },
-    {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
-    },
-    {
         imageUrl: motion,
         name: "Motion",
         type: "Animation",
@@ -71,21 +116,6 @@ export const skills = [
     {
         imageUrl: mui,
         name: "Material-UI",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nodejs,
-        name: "Node.js",
-        type: "Backend",
-    },
-    {
-        imageUrl: react,
-        name: "React",
         type: "Frontend",
     },
     {
@@ -102,69 +132,65 @@ export const skills = [
         imageUrl: tailwindcss,
         name: "Tailwind CSS",
         type: "Frontend",
-    },
-    {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
     }
 ];
 
 export const experiences = [
     {
-        title: "Free lance Work",
-        company_name: "AS Enterprise",
-        icon: freelance,
-        iconBg: "#b7e4c7",
-        date: "June 2023 - September 2023",
+        title: "Full Stack Developer",
+        company_name: "Templegate Technologies",
+        icon: templegate,
+        iconBg: "#667eea",
+        date: "July 2024 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility also added payment gateway.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developing enterprise-grade supply chain management solutions using React.js, Django, and PostgreSQL.",
+            "Building comprehensive procurement and source-to-pay modules for streamlined business operations.",
+            "Implementing inventory management systems with real-time tracking and analytics capabilities.",
+            "Developing auction platforms and sales management features to optimize business workflows.",
+            "Collaborating with cross-functional teams to deliver scalable full-stack applications.",
         ],
     },
     {
-        title: "Freelance Work",
-        company_name: "AS Enterprise",
-        icon: freelance,
-        iconBg: "#e06378",
-       
-       
-        date: "June 2023 - October 2023",
-        points: [
-            "Developing and maintaining web applications using next.js,Firebase and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "provides the stock information and also makes easy for user to place order, which allows user to connect securly.",
-        ],
-    },
-    // {
-    //     title: "Web Developer",
-    //     company_name: "entriprise",
-    //     icon: freelance,
-    //     iconBg: "#a773f0",
-    //     date: "Jan 2022 - june 2022",
-    //     points: [
-    //         "Developing and maintaining web applications using React.js and other related technologies.",
-    //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //         "Implementing responsive design and ensuring cross-browser compatibility.",
-    //         "Participating in code reviews and providing constructive feedback to other developers.",
-    //     ],
-    // },
-    {
-        title: "Full stack Developer",
+        title: "Full Stack Developer (Intern)",
         company_name: "Simmi Foundation",
         icon: internimg,
         iconBg: "#a2d2ff",
-        date: "Jan 2023 - july2023",
+        date: "Jan 2024 - June 2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Developed a deep understanding of user experience and user interface design, and implemented design elements that improved the overall usability and functionality of the web applications.",
-            "Worked on various projects during the internship, ranging from small-scale websites to large-scale web applications, and gained extensive experience in front-end development technologies such as React,Next js and for backend mongoose, Rest Api.",
+            "Developed and maintained web applications using React.js, Next.js, and RESTful APIs.",
+            "Gained hands-on experience with MongoDB, Mongoose, and full-stack development practices.",
+            "Collaborated with cross-functional teams to create high-quality digital products.",
+            "Developed strong understanding of UI/UX design principles and responsive web development.",
         ],
     },
+    {
+        title: "Frontend Developer (Intern)",
+        company_name: "AS Enterprise",
+        icon: freelance,
+        iconBg: "#b7e4c7",
+        date: "June 2023 - December 2023",
+        points: [
+            "Developed responsive web applications using React.js and Next.js frameworks.",
+            "Implemented Firebase integration for real-time data management and authentication.",
+            "Created stock information systems with secure user connectivity and order placement features.",
+            "Implemented payment gateway integrations and ensured cross-browser compatibility.",
+        ],
+    },
+];
+
+export const education = [
+    {
+        degree: "Master of Science in Cyber Security",
+        institution: "University",
+        date: "2024",
+        description: "Specialized in network security, ethical hacking, and security protocols."
+    },
+    {
+        degree: "Bachelor of Technology",
+        institution: "University",
+        date: "2023",
+        description: "Focus on Computer Science and Full Stack Development."
+    }
 ];
 
 export const socialLinks = [
@@ -188,6 +214,13 @@ export const socialLinks = [
 
 export const projects = [
     {
+        iconUrl: esp32,
+        theme: 'btn-back-green',
+        name: 'E-Nose: Bacterial Air Quality System',
+        description: 'A novel low-cost VOC-based electronic nose system for real-time bacterial air quality assessment using ESP32 microcontroller and Machine Learning. Features AI model for bacterial classification with working prototype.',
+        link: 'https://github.com/Akhilesh-pujar',
+    },
+    {
         iconUrl: pricewise,
         theme: 'btn-back-red',
         name: 'IdeaForge: NextGen Notes ',
@@ -204,7 +237,7 @@ export const projects = [
 
     {
         iconUrl: estate,
-        theme: 'btn-back-black',
+        theme: 'btn-back-blue',
         name: 'Payment Application.',
         description: 'I built a web application that allows users to transfer and receive money from other registered users on my platform. It is a small payment application created for educational use exclusively, and it uses a simple architecture using MERN.',
         link: 'https://github.com/Akhilesh-pujar/PAYTM_COMPLETED',
@@ -218,7 +251,7 @@ export const projects = [
     },
     {
         iconUrl: summiz,
-        theme: 'btn-back-green',
+        theme: 'btn-back-orange',
         name: 'CogniQuest: AI Quiz Realm ',
         description: 'App that leverages AI to automatically generate concise questions for user according to there needs and you can choose the difficulty of the questions You want to set.',
         link: 'https://github.com/Akhilesh-pujar/Quiz-app-with-ai',

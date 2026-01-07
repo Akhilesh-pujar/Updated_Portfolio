@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="chip-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e74c3c"/>
+      <stop offset="100%" stop-color="#c0392b"/>
+    </linearGradient>
+  </defs>
+  <rect x="28" y="28" width="72" height="72" rx="8" fill="url(#chip-gradient)"/>
+  <rect x="40" y="40" width="48" height="48" rx="4" fill="#2c3e50"/>
+  <circle cx="64" cy="64" r="16" fill="#34495e"/>
+  <circle cx="64" cy="64" r="8" fill="#1abc9c"/>
+  <!-- Pins -->
+  <rect x="36" y="16" width="8" height="16" fill="#95a5a6"/>
+  <rect x="52" y="16" width="8" height="16" fill="#95a5a6"/>
+  <rect x="68" y="16" width="8" height="16" fill="#95a5a6"/>
+  <rect x="84" y="16" width="8" height="16" fill="#95a5a6"/>
+  <rect x="36" y="96" width="8" height="16" fill="#95a5a6"/>
+  <rect x="52" y="96" width="8" height="16" fill="#95a5a6"/>
+  <rect x="68" y="96" width="8" height="16" fill="#95a5a6"/>
+  <rect x="84" y="96" width="8" height="16" fill="#95a5a6"/>
+  <rect x="16" y="36" width="16" height="8" fill="#95a5a6"/>
+  <rect x="16" y="52" width="16" height="8" fill="#95a5a6"/>
+  <rect x="16" y="68" width="16" height="8" fill="#95a5a6"/>
+  <rect x="16" y="84" width="16" height="8" fill="#95a5a6"/>
+  <rect x="96" y="36" width="16" height="8" fill="#95a5a6"/>
+  <rect x="96" y="52" width="16" height="8" fill="#95a5a6"/>
+  <rect x="96" y="68" width="16" height="8" fill="#95a5a6"/>
+  <rect x="96" y="84" width="16" height="8" fill="#95a5a6"/>
+</svg>

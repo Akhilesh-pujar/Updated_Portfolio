@@ -2,63 +2,181 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+import { motion } from "framer-motion";
 
 import { CTA } from "../components";
-import { experiences, skills } from "../constants";
+import { experiences, skills, education } from "../constants";
 
 import "react-vertical-timeline-component/style.min.css";
 import { Link } from "react-router-dom";
 
 const About = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
     <section className='max-container'>
-      <h1 className='head-text'>
-        Hello, I'm{" "}
-        <span className='blue-gradient_text font-semibold drop-shadow'>
-          {" "}
-          Akhilesh S Pujar
-        </span>{" "}
-        👋
-      </h1>
+      {/* Hero Section */}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <h1 className='head-text'>
+          Hello, I'm{" "}
+          <span className='blue-gradient_text font-semibold drop-shadow'>
+            {" "}
+            Akhilesh S Pujar
+          </span>{" "}
+          👋
+        </h1>
+      </motion.div>
 
-      <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-        <p>
-        I am a Full developer with over 1 years of experience in developing complex web applications. I am skilled in a variety of programming languages, including JavaScript, 
-        C++ you can checkout my leet code profile here:
-        <Link href="https://leetcode.com/Akhilesh_pujar/" target="_blank" className=" text-amber-500 font-semibold">link</Link>
-        , and have experience working with various web frameworks and databases. Throughout my College, I have successfully delivered several projects on time and within budget,
-         and have received recognition from my Teachers and faculty for my attention to detail and problem-solving skills. I am passionate about creating innovative and efficient 
-         solutions to complex problems, and am always eager to learn and grow in my field .
+      <motion.div
+        className='mt-5 flex flex-col gap-3 text-slate-500'
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
+        <p className="text-lg leading-relaxed">
+          I am a <span className="text-blue-500 font-semibold">Full Stack Developer</span> with{" "}
+          <span className="text-blue-500 font-semibold">1.6+ years of experience</span> building
+          enterprise-grade web applications. Currently working at{" "}
+          <span className="font-semibold text-purple-500">Templegate Technologies</span> on
+          supply chain management solutions using React.js, Django, and PostgreSQL.
         </p>
-      </div>
+        <p className="text-lg leading-relaxed">
+          I hold a <span className="font-semibold text-green-500">Master's degree in Cyber Security</span> and
+          have expertise in both frontend and backend technologies. I'm passionate about creating
+          innovative solutions and have experience with IoT projects, including building an
+          AI-powered bacterial detection system. Check out my{" "}
+          <Link
+            to="https://leetcode.com/Akhilesh_pujar/"
+            target="_blank"
+            className="text-amber-500 font-semibold hover:underline hover:text-amber-400 transition-colors"
+          >
+            LeetCode profile
+          </Link>
+          {" "}for my problem-solving journey.
+        </p>
+      </motion.div>
 
+      {/* Skills Section */}
       <div className='py-10 flex flex-col'>
-        <h3 className='subhead-text'>My Skills</h3>
+        <motion.h3
+          className='subhead-text'
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
+          My Skills
+        </motion.h3>
 
-        <div className='mt-16 flex flex-wrap gap-12'>
-          {skills.map((skill) => (
-            <div className='block-container w-20 h-20' key={skill.name}>
-              <div className='btn-back rounded-xl' />
-              <div className='btn-front rounded-xl flex justify-center items-center'>
+        <motion.div
+          className='mt-16 flex flex-wrap gap-12'
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          {skills.map((skill, index) => (
+            <motion.div
+              className='block-container w-20 h-20 group'
+              key={skill.name}
+              variants={itemVariants}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <div className='btn-back rounded-xl transition-all duration-300 group-hover:shadow-lg group-hover:shadow-blue-500/25' />
+              <div className='btn-front rounded-xl flex justify-center items-center transition-all duration-300'>
                 <img
                   src={skill.imageUrl}
                   alt={skill.name}
-                  className='w-1/2 h-1/2 object-contain'
+                  className='w-1/2 h-1/2 object-contain transition-transform duration-300 group-hover:scale-110'
                 />
               </div>
-            </div>
+              {/* Tooltip */}
+              <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                <span className="bg-slate-800 text-white text-xs px-2 py-1 rounded">{skill.name}</span>
+              </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
 
-      <div className='py-16'>
-        <h3 className='subhead-text'>Work Experience.</h3>
-        <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-          <p>
-            I've worked with all sorts of companies, leveling up my skills and
-            teaming up with smart people. Here's the rundown:
-          </p>
+      {/* Education Section */}
+      <motion.div
+        className='py-10'
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+      >
+        <h3 className='subhead-text mb-8'>
+          <span className="blue-gradient_text">Education</span>
+        </h3>
+        <div className="grid md:grid-cols-2 gap-6">
+          {education.map((edu, index) => (
+            <motion.div
+              key={index}
+              className="p-6 rounded-2xl bg-gradient-to-br from-slate-100 to-white border border-slate-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 + index * 0.1 }}
+            >
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center flex-shrink-0">
+                  <span className="text-white text-lg">🎓</span>
+                </div>
+                <div>
+                  <h4 className="font-poppins font-semibold text-lg text-slate-800">{edu.degree}</h4>
+                  <p className="text-blue-500 font-medium">{edu.date}</p>
+                  <p className="text-slate-500 mt-2 text-sm">{edu.description}</p>
+                </div>
+              </div>
+            </motion.div>
+          ))}
         </div>
+      </motion.div>
+
+      {/* Work Experience Section */}
+      <div className='py-16'>
+        <motion.h3
+          className='subhead-text'
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+        >
+          Work Experience
+        </motion.h3>
+        <motion.div
+          className='mt-5 flex flex-col gap-3 text-slate-500'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6 }}
+        >
+          <p className="text-lg">
+            I've worked with innovative companies, building scalable solutions and
+            collaborating with talented teams. Here's my professional journey:
+          </p>
+        </motion.div>
 
         <div className='mt-12 flex'>
           <VerticalTimeline>
@@ -80,7 +198,8 @@ const About = () => {
                   borderBottom: "8px",
                   borderStyle: "solid",
                   borderBottomColor: experience.iconBg,
-                  boxShadow: "none",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
+                  borderRadius: "12px",
                 }}
               >
                 <div>

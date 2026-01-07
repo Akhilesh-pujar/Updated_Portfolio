@@ -6,6 +6,7 @@ import tesla from './tesla.png'
 import logo from './logo.svg'
 import internimg from './internimg.png'
 import freelance from './freelance.png'
+import templegate from './templegate.svg'
 
 export {
     hero,
@@ -15,5 +16,6 @@ export {
     tesla,
     logo,
     internimg,
-    freelance
+    freelance,
+    templegate
 }
